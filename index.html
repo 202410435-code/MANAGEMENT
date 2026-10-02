@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BABSI | Cebu Lechon Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <img src="assets/logo.png" alt="BABSI logo" />
+        <div><strong>BABSI</strong><small>BALIUAG CEBU LECHON</small></div>
+      </div>
+      <nav id="mainNav">
+        <button class="nav-item active" data-page="dashboard">⌂ <span>Dashboard</span></button>
+        <button class="nav-item" data-page="appointments">▣ <span>Appointments</span></button>
+        <button class="nav-item" data-page="orders">🛒 <span>Orders</span></button>
+        <button class="nav-item" data-page="customers">♙ <span>Customers</span></button>
+        <button class="nav-item" data-page="menu">▤ <span>Menu Management</span></button>
+        <button class="nav-item" data-page="reports">▥ <span>Reports</span></button>
+        <button class="nav-item" data-page="settings">⚙ <span>Settings</span></button>
+        <button class="nav-item" data-page="logout">↪ <span>Log Out</span></button>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu">☰</button>
+        <div>
+          <h1 id="pageTitle">Dashboard</h1>
+          <p id="pageSubtitle">Welcome, Owner / Admin!</p>
+        </div>
+        <div class="top-actions">
+          <button class="icon-btn" title="Notifications">♧<b class="notif">3</b></button>
+          <div class="user">
+            <div class="avatar">👩🏻</div>
+            <div><strong>Owner</strong><small>Administrator</small></div>
+            <span>⌄</span>
+          </div>
+        </div>
+      </header>
+      <section id="content"></section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" id="modal"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
